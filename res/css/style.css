@@ -90,3 +90,7 @@ button i {
 #questions-buttons-group button {
     width: 120px;
 }
+
+#results-screen-box {
+    display: none;
+}
