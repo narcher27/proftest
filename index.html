@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Пройдите тест на уровень нервно-психического напряжения!</title>
+    <title>Пройдите тест на определение интересов и профессионального типа!</title>
     <link rel="stylesheet" href="./res/css/style.css">
-    <script src="./res/js/main.js" async></script>
+    <script src="./res/js/main2.js" async></script>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="./res/css/fa/css/all.css">
 
@@ -23,28 +23,25 @@
     </header>
 
     <div id="start-screen" class="column-container">
-        <h1><i class="fa-solid fa-fire"></i>Тест на определение уровня нервно-психического напряжения</h1>
+        <h1><i class="fa-solid fa-briefcase"></i>Тест интересов</h1>
         <div id="start-screen-box" class="box-column-container">
-            <p id="instruction">Пройдите небольшой тест на определение уровня нервно-психического напряжения. Вам будет
-                представлен ряд вопросов, на которые нужно ответить «верно» или «неверно». На прохождение уйдёт не более
-                5 минут.</p>
+            <p id="instruction">Пройдите тест на определение интересов и профессионального типа! Примерное время прохождения – 25 минут.</p>
+            <input type="text" id="fioInput" placeholder="Введите ФИО" required>
             <button id="start-button"><i class="fa-solid fa-chevron-right"></i>Начать тест</button>
         </div>
     </div>
 
 
     <div id="questions-screen-box" class="box-column-container">
-        <p id="question">Вопрос 1</p>
-        <div id="questions-buttons-group">
-            <button id="right">Верно</button>
-            <button id="wrong">Неверно</button>
-        </div>
+        <div id="quizContainer"></div>
+        <button id="next">Далее</button>
     </div>
 
     <div id="results-screen-box" class="box-column-container">
-        <p id="results-number">Вы набрали N из M возможных баллов по шкале нервно-психического напряжения.</p>
-        <p id="results-level">Уровень нервно-психического напряжения: высокий</p>
-        <button id="restart-button"><i class="fa-solid fa-arrow-rotate-left"></i>Перепройти тест</button>
+        <h3>Ваши интересы:</h3>
+        <div id="interests-box"></div>
+        <h3>Ваши профессиональные типы:</h3>
+        <div id="proftypes-box"></div>
     </div>
 
 </body>
